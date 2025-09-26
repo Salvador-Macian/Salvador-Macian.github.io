@@ -1,0 +1,60 @@
+
+body{
+    width: 800px;
+}
+ol{
+    display:flex;
+    gap: 5px;
+    font-size: 16px;
+    list-style: none;
+    border: green 1px solid;
+    width: 800px;  
+}
+li{
+    margin: auto;
+    
+    font-size: 20px;       
+}
+body{
+    margin: auto;
+
+}
+a{
+    text-decoration:dashed;
+    color: black;
+}
+nav{
+    justify-content: center;
+}
+   
+section{
+    width: 4%;
+    
+    
+}
+
+section{
+    width: 250px;
+}
+
+img:nth-child(1){
+    width: 800px;
+    height: 400px;
+}
+img:nth-child(2){
+    width: 600px;
+}
+img:nth-child(3){
+    width: 600px;
+}
+#asetto{
+    color: red;
+}
+img:nth-child(4){
+    width: 600px;
+    display: flex;
+
+}
+img:nth-child(5){
+    width: 600px;
+}
