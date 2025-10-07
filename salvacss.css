@@ -1,7 +1,7 @@
 
 body{
     width: 800px;
-    margin: 0;
+    
 }
 ol{
     
@@ -35,32 +35,40 @@ a{
 
 section{
     width: 200px;
+    margin: auto;
 
 }
 
 img:nth-child(1){
     width: 1900px;
     height: 800px;
+    margin: auto;
    
 }
 img:nth-child(2){
     width: 600px;
+      margin: auto;
 }
 img:nth-child(3){
     width: 600px;
+      margin: auto;
 }
+
 #asetto{
     color: red;
 }
 img:nth-child(4){
     width: 600px;
+      margin: auto;
 
 
 
 }
 img:nth-child(5){
     width: 600px;
+      margin: auto;
 }
+
 
 
 
