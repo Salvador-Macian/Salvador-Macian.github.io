@@ -1,7 +1,7 @@
 body{
     
  
-width: 900x;
+
     background-repeat: no-repeat;
     background-image: url(imagenes/fondo.webp);
 }
@@ -61,5 +61,5 @@ section{
 article:hover{
     transform: scale(1.1);
     cursor: pointer;
- 
+    color: red;
 }
