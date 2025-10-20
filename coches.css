@@ -80,7 +80,12 @@ h1 {
 }
 
 .detras p {
-    font-size: 16px;
-    margin: 5px 0;
+    font-size: 18px;
+    margin: 3px 0;
 }
+audio {
+  width: 300px; 
+  border-radius: 10px;
+}
+
 
