@@ -27,7 +27,7 @@ h1 {
 
 .carta {
     position: relative;
-    width: 300px;
+    width: 400px;
     height: 400px;
     transform-style: preserve-3d;
     transition: transform 0.8s ease;
