@@ -1,0 +1,86 @@
+body {
+   
+    
+    padding: 50px;
+    text-align: center;
+     background-repeat: no-repeat;
+    background-image: url(imagenes/parrilla18.jpg);
+    background-size: cover;
+}
+
+
+h1 {
+    margin-bottom: 53px;
+    color: rgb(255, 255, 255);
+}
+
+.coches {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.coche {
+    perspective: 1000px;
+}
+
+.carta {
+    position: relative;
+    width: 400px;
+    height: 500px;
+    transform-style: preserve-3d;
+    transition: transform 0.8s ease;
+}
+
+.carta:hover {
+    transform: rotateY(180deg);
+}
+
+.frente, .detras {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    box-shadow: 0 4px 10px black;
+}
+
+.frente {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.frente img {
+    width: 100%;
+    height: 85%;
+    object-fit: cover;
+}
+
+.frente h3 {
+    margin: 10px 0;
+}
+
+.detras {
+    background: #fff;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.detras h3 {
+    margin-bottom: 10px;
+}
+
+.detras p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+

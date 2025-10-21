@@ -1,0 +1,40 @@
+body { 
+    padding: 50px;
+    text-align: center;
+    background-image: url(imagenes/fondilloooooooo.jpg);
+    background-size: cover;
+      background-repeat: no-repeat;
+       
+
+}
+h1 {
+    margin-bottom: 53px;
+    color: rgb(255, 255, 255);
+}
+section{
+    width: 100%;
+    display: flex;
+    
+    
+}
+img{
+    width: 80%;
+    height: 550px;
+    border-radius: 12px;
+    padding-left: 100px;
+ 
+   
+
+}
+article{
+    display: flex;
+      
+}
+img:hover{
+    transform: scale(1.15);
+}
+.lmp2{
+    width: 50%;
+    height: 550px;
+    padding-left: 50px;
+}

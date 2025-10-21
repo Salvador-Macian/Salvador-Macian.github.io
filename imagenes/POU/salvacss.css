@@ -1,0 +1,91 @@
+body {
+
+    padding: 50px;
+    text-align: center;
+     background-repeat: no-repeat;
+    background-image: url(imagenes/lol.jpg);
+    background-size: cover;
+}
+
+
+
+
+.coches {
+    display: flex;
+    flex-wrap: wrap;
+justify-content:center;
+
+   
+}
+
+
+
+.carta {
+ 
+    width: 570px;
+    height: 600px;
+    padding: 10px;
+    border-radius: 12px;
+    margin-top: 200px;
+    margin-bottom: 70px;
+   
+   
+    
+}
+
+.carta:hover {
+    transform: scale(1.15);
+}
+
+
+
+.frente {
+    background: #ffffff;
+    width: 100%;
+   justify-content: center;
+    align-items: center;
+}
+
+.frente img {
+    width: 570px;
+    height: 600px;
+    object-fit: cover;
+}
+
+.frente h3 {
+    margin: 2px 0;
+
+}
+ol{
+    display: flex;
+
+      text-decoration: red solid underline ;
+  
+}
+li{
+    display: flex;
+    color: white;
+    width: 100%;
+    font-size: 45px;
+  
+}
+
+p{
+    color: white;
+    font-size: 36px;
+}
+h3{
+    font-size: 35px;
+    border: 1px solid black;
+}
+
+h1 img{
+    width:1100px;
+    height: 350px;
+    padding-top: 3px;
+}
+
+
+
+
+
