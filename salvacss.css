@@ -22,19 +22,22 @@ justify-content:center;
 
 .carta {
  
-    width: 570px;
+    width: 530px;
     height: 600px;
     padding: 10px;
     border-radius: 12px;
     margin-top: 200px;
-    margin-bottom: 70px;
+    padding-top: 10px;
+
    
    
     
 }
 
 .carta:hover {
-    transform: scale(1.15);
+
+    transform: scale(1.05);
+  
 }
 
 
@@ -47,7 +50,7 @@ justify-content:center;
 }
 
 .frente img {
-    width: 570px;
+    width: 530px;
     height: 600px;
     object-fit: cover;
 }
