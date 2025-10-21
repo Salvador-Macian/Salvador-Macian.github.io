@@ -14,6 +14,8 @@ body {
     display: flex;
     flex-wrap: wrap;
 justify-content:center;
+ border-radius: 12px;
+
 
    
 }
@@ -22,15 +24,16 @@ justify-content:center;
 
 .carta {
  
-    width: 530px;
-    height: 600px;
+       width: 550px;
+    height: 700px;
     padding: 10px;
-    border-radius: 12px;
+  
     margin-top: 200px;
     padding-top: 10px;
-
-   
-   
+    padding-left: 10px;
+     border-radius: 12px;
+       
+    
     
 }
 
@@ -47,12 +50,20 @@ justify-content:center;
     width: 100%;
    justify-content: center;
     align-items: center;
+       border-radius: 12px;
+        border: 1px solid black;
 }
 
+
 .frente img {
-    width: 530px;
-    height: 600px;
+    width: 550px;
+    height: 700px;
     object-fit: cover;
+     border-radius: 12px;
+
+    
+    
+
 }
 
 .frente h3 {
@@ -68,10 +79,12 @@ ol{
 li{
     display: flex;
     color: white;
-    width: 100%;
+    width: 25%;
     font-size: 45px;
   
 }
+
+
 
 p{
     color: white;
@@ -79,14 +92,16 @@ p{
 }
 h3{
     font-size: 35px;
-    border: 1px solid black;
+ 
 }
 
 h1 img{
     width:1100px;
     height: 350px;
-    padding-top: 3px;
+    padding-top: 35px;
+     border-radius: 12px;
 }
+
 
 
 
