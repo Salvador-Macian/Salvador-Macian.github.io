@@ -24,7 +24,10 @@ section:nth-child(1){
   padding-top: 100px;
    color: white;
 }
-
+a{
+    color: red;
+    text-decoration: none;
+}
 
 
 
