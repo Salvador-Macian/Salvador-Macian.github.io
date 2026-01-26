@@ -1,0 +1,65 @@
+body { 
+    padding: 50px;
+    text-align: center;
+    background-image: url(imagenes/fondonegro.webp);
+    background-size: cover;
+      background-repeat: no-repeat;
+       
+
+}
+h1 {
+    margin-bottom: 53px;
+    color: rgb(255, 0, 0);
+}
+section{
+    width: 100%;
+    display: flex;
+     gap: 30px
+    
+}
+img{
+    width: 450px;
+    height: 500px;
+    border-radius: 12px;
+ 
+   
+   
+
+}
+article{
+    display: flex;
+   
+   
+}
+img:hover{
+    transform: scale(1.15);
+}
+span{
+    color: white;
+}
+.migas {
+  position: absolute; 
+  top: 30px;         
+  left: 15px;         
+  font-size: 14px;
+  z-index: 100;       
+}
+
+.migas a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.migas a:hover {
+  text-decoration: underline;
+}
+
+.migas span {
+
+  color: #ffffff;
+}
+
+.migas .actual {
+  font-weight:bolder;
+  color: white;
+}
