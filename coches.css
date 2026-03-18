@@ -1,18 +1,17 @@
 body {
-   
-    
     padding: 50px;
     text-align: center;
-     background-repeat: no-repeat;
+    background-repeat: no-repeat;
     background-image: url(imagenes/parrilla.jpg);
     background-size: cover;
+    background-position: center;
 }
-
 
 h1 {
     margin-bottom: 53px;
     color: white;
 }
+
 
 .coches {
     display: flex;
@@ -20,6 +19,7 @@ h1 {
     justify-content: center;
     gap: 30px;
 }
+
 
 .coche {
     perspective: 1000px;
@@ -36,6 +36,7 @@ h1 {
 .carta:hover {
     transform: rotateY(180deg);
 }
+
 
 .frente, .detras {
     position: absolute;
@@ -83,9 +84,62 @@ h1 {
     font-size: 18px;
     margin: 3px 0;
 }
+
 audio {
-  width: 300px; 
-  border-radius: 10px;
+    width: 300px; 
+    border-radius: 10px;
 }
 
 
+
+@media (max-width: 480px) {
+
+    body {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    
+    .coches {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+   
+    .carta {
+        width: 90%;      
+        height: auto;     
+    }
+
+    .frente, .detras {
+        position: relative;  
+        height: auto;
+    }
+
+    .carta:hover {
+        transform: none;
+    }
+
+    .detras {
+        transform: none;
+    }
+
+    .frente img {
+        height: auto;
+    }
+
+    
+    .detras p {
+        font-size: 14px;
+    }
+
+  
+    audio {
+        width: 100%;
+    }
+}
