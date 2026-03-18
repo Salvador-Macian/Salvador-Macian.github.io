@@ -3,38 +3,91 @@ body {
     text-align: center;
     background-image: url(imagenes/fondilloooooooo.jpg);
     background-size: cover;
-      background-repeat: no-repeat;
-       
-
+    background-repeat: no-repeat;
+    background-position: center;
 }
+
 h1 {
     margin-bottom: 53px;
     color: rgb(255, 255, 255);
 }
-section{
+
+
+section {
     width: 100%;
     display: flex;
-    
-    
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
-img{
+
+
+article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1; 
+}
+
+
+img {
     width: 80%;
     height: 550px;
     border-radius: 12px;
     padding-left: 100px;
- 
-   
+    transition: transform 0.3s ease;
+}
 
-}
-article{
-    display: flex;
-      
-}
-img:hover{
+img:hover {
     transform: scale(1.15);
 }
-.lmp2{
+
+
+.lmp2 {
     width: 50%;
     height: 550px;
     padding-left: 50px;
+}
+
+
+
+@media (max-width: 480px) {
+
+    body {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+   
+    section {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    article {
+        flex-direction: column;
+        width: 100%;
+    }
+
+   
+    img {
+        width: 100%;
+        height: auto;      
+        padding-left: 0;   
+    }
+
+    .lmp2 {
+        width: 100%;
+        height: auto;
+        padding-left: 0;
+    }
+
+  
+    img:hover {
+        transform: scale(1.05);
+    }
 }
