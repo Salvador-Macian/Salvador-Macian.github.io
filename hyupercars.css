@@ -1,5 +1,5 @@
 
-@media only screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
     body {
         padding: 15px; 
         background-size: cover;
@@ -16,9 +16,8 @@
     }
 
     .carta {
-        width: 100%; 
+        width: 95%; 
         height: auto; 
-        max-width: 350px; 
         margin: 0 auto; 
     }
 
@@ -45,6 +44,7 @@ body {
     background-repeat: no-repeat;
     background-image: url(imagenes/lol.jpg);
     background-size: cover;
+
 }
 
 h1 {
@@ -65,10 +65,11 @@ h1 {
 
 .carta {
     position: relative;
-    width: 600px;
+    width: 100%;
     height: 450px;
     transform-style: preserve-3d;
     transition: transform 0.8s ease;
+    
 }
 
 .carta:hover {
