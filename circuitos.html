@@ -1,321 +1,235 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Circuitos</title>
-    <style>
-        body {
-            padding: 50px;
-            text-align: center;
-            background-repeat: no-repeat;
-            background-image: url('imagenes/circuitos_fondo.jpg');
-            background-size: cover;
-            background-color: rgb(143, 144, 143);
-        }
+<meta charset="UTF-8">
+<title>Circuitos</title>
 
-        h1 {
-            margin-bottom: 53px;
-            color: white;
-        }
+<style>
+    @media (max-width: 480px) {
 
-        .circuitos {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 30px;
-        }
+    body {
+        padding: 15px;
+    }
 
-        .circuito {
-            perspective: 1000px;
-        }
+    h1 {
+        font-size: 22px;
+        margin-bottom: 25px;
+    }
 
-        .carta {
-            position: relative;
-            width: 300px;
-            height: 400px;
-            transform-style: preserve-3d;
-            transition: transform 0.8s ease;
-        }
+    .circuitos {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
 
-        .carta:hover {
-            transform: rotateY(180deg);
-        }
+    .circuito {
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+        flex-wrap: wrap;
+    }
 
-        .frente,
-        .detras {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            border-radius: 12px;
-            backface-visibility: hidden;
-            overflow: hidden;
-            box-shadow: 0 4px 10px black;
-        }
+    .carta {
+        height: auto;
+    }
 
-        .frente {
-            background: #fff;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background-color: black;
-            color: rgb(255, 255, 255);
-            font-size: 23px;
-        }
+    .carta img {
+        height: 180px;
+    }
 
-        .frente img {
-            width: 100%;
-            height: 80%;
-            object-fit: cover;
-        }
+    .carta h3 {
+        font-size: 18px;
+    }
 
-        .frente h3 {
-            margin: 10px 0;
-        }
+    .carta p {
+        font-size: 14px;
+    }
+}
+    
 
-        .detras {
-            background: #fff;
-            transform: rotateY(180deg);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-        }
+    body {
+        background-color: #b6b3b3;
+        
+        margin: 0;
+        padding: 40px;
+        text-align: center;
 
-        .detras h3 {
-            margin-bottom: 10px;
-        }
+    }
 
-        .detras p {
-            font-size: 16px;
-            margin: 5px 0;
-        }
+    h1 {
+        margin-bottom: 53px;
+        color: white;
+    }
 
-        @media screen and (max-width: 480px) {
-            body {
-                padding: 15px; 
-                background-size: cover;
-            }
+    .circuitos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
 
-            h1 {
-                font-size: 24px;
-                margin-bottom: 20px;
-            }
+    .circuito {
+        width: 300px;
+        height: 400px;
+    }
 
-            .circuitos {
-                flex-direction: column; 
-                gap: 20px;
-            }
+    .carta {
+        width: 100%;
+        height: 100%;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 10px black;
+        background-color: black;
+        color: white;
+        display: flex;
+        flex-direction: column;
+    }
 
-            .carta {
-                width: 95%; 
-                height: auto; 
-                margin: 0 auto; 
-            }
+    .carta img {
+        width: 100%;
+        height: 80%;
+        object-fit: cover;
+    }
 
-            .frente img {
-                width: 100%;
-                height: auto; 
-            }
+    .carta h3 {
+        margin: 10px 0;
+        font-size: 22px;
+    }
 
-            .detras {
-                padding: 15px;
-            }
+    .carta p {
+        margin: 5px 0;
+        font-size: 16px;
+    }
+</style>
 
-            .detras p {
-                font-size: 14px; 
-            }
-        }
-    </style>
 </head>
+
 <body>
-    <h1>Todos Los Cirucitos De Lemans Ultimate</h1>
-    <section class="circuitos">
 
-        <article class="circuito">
+<h1>Circuitos</h1>
+
+<section>
+    <div class="circuitos">
+
+        <div class="circuito">
             <div class="carta">
-                <div class="frente">
-                    <img src="dunlop.webp" alt="Le Mans">
-                    <h3>Le Mans</h3>
-                </div>
-                <div class="detras">
-                    <h3>Le Mans</h3>
-                    <p>Ubicación: Francia</p>
-                    <p>Curvas: 38</p>
-                </div>
+                <img src="dunlop.webp" alt="Le Mans">
+                <h3>Le Mans</h3>
+                <p>Ubicación: Francia</p>
+                <p>Curvas: 38</p>
             </div>
-        </article>
+        </div>
 
-        <article class="circuito">
+        <div class="circuito">
             <div class="carta">
-                <div class="frente">
-                    <img src="curvaza.webp" alt="Spa-Francorchamps">
-                    <h3>Spa-Francorchamps</h3>
-                </div>
-                <div class="detras">
-                    <h3>Spa-Francorchamps</h3>
-                    <p>Ubicación: Bélgica</p>
-                    <p>Curvas: 19</p>
-                </div>
+                <img src="curvaza.webp" alt="Spa-Francorchamps">
+                <h3>Spa-Francorchamps</h3>
+                <p>Ubicación: Bélgica</p>
+                <p>Curvas: 19</p>
             </div>
-        </article>
+        </div>
 
-        <article class="circuito">
+        <div class="circuito">
             <div class="carta">
-                <div class="frente">
-                    <img src="atardecersebting.jpg" alt="Sebring">
-                    <h3>Sebring</h3>
-                </div>
-                <div class="detras">
-                    <h3>Sebring</h3>
-                    <p>Ubicación: EE.UU.</p>
-                    <p>Curvas: 17</p>
-                </div>
+                <img src="atardecersebting.jpg" alt="Sebring">
+                <h3>Sebring</h3>
+                <p>Ubicación: EE.UU.</p>
+                <p>Curvas: 17</p>
             </div>
-        </article>
+        </div>
 
-        <article class="circuito">
+        <div class="circuito">
             <div class="carta">
-                <div class="frente">
-                    <img src="inter.webp" alt="Interlagos">
-                    <h3>Interlagos</h3>
-                </div>
-                <div class="detras">
-                    <h3>Interlagos</h3>
-                    <p>Ubicación: Brasil</p>
-                    <p>Curvas: 15</p>
-                </div>
+                <img src="inter.webp" alt="Interlagos">
+                <h3>Interlagos</h3>
+                <p>Ubicación: Brasil</p>
+                <p>Curvas: 15</p>
             </div>
-        </article>
+        </div>
 
-        <article class="circuito">
+        <div class="circuito">
             <div class="carta">
-                <div class="frente">
-                    <img src="bahrein.jpg" alt="Bahrein">
-                    <h3>Bahrein</h3>
-                </div>
-                <div class="detras">
-                    <h3>Bahrein</h3>
-                    <p>Ubicación: Bahrein</p>
-                    <p>Curvas: 15</p>
-                </div>
+                <img src="bahrein.jpg" alt="Bahrein">
+                <h3>Bahrein</h3>
+                <p>Ubicación: Bahrein</p>
+                <p>Curvas: 15</p>
             </div>
-        </article>
+        </div>
 
-        <article class="circuito">
+        <div class="circuito">
             <div class="carta">
-                <div class="frente">
-                    <img src="fuji.jpg" alt="Fuji">
-                    <h3>Fuji</h3>
-                </div>
-                <div class="detras">
-                    <h3>Fuji</h3>
-                    <p>Ubicación: Japón</p>
-                    <p>Curvas: 16</p>
-                </div>
+                <img src="fuji.jpg" alt="Fuji">
+                <h3>Fuji</h3>
+                <p>Ubicación: Japón</p>
+                <p>Curvas: 16</p>
             </div>
-        </article>
+        </div>
 
-        <article class="circuito">
+        <div class="circuito">
             <div class="carta">
-                <div class="frente">
-                    <img src="portimao.jpg" alt="Portimao">
-                    <h3>Portimao</h3>
-                </div>
-                <div class="detras">
-                    <h3>Portimao</h3>
-                    <p>Ubicación: Portugal</p>
-                    <p>Curvas: 15</p>
-                </div>
+                <img src="portimao.jpg" alt="Portimao">
+                <h3>Portimao</h3>
+                <p>Ubicación: Portugal</p>
+                <p>Curvas: 15</p>
             </div>
-        </article>
+        </div>
 
-        <article class="circuito">
+        <div class="circuito">
             <div class="carta">
-                <div class="frente">
-                    <img src="silvetstobr.jpg" alt="Silverstone">
-                    <h3>Silverstone</h3>
-                </div>
-                <div class="detras">
-                    <h3>Silverstone</h3>
-                    <p>Ubicación: Reino Unido</p>
-                    <p>Curvas: 18</p>
-                </div>
+                <img src="silvetstobr.jpg" alt="Silverstone">
+                <h3>Silverstone</h3>
+                <p>Ubicación: Reino Unido</p>
+                <p>Curvas: 18</p>
             </div>
-        </article>
+        </div>
 
-        <article class="circuito">
+        <div class="circuito">
             <div class="carta">
-                <div class="frente">
-                    <img src="paul.jpg" alt="Paul Ricard">
-                    <h3>Paul Ricard</h3>
-                </div>
-                <div class="detras">
-                    <h3>Paul Ricard</h3>
-                    <p>Ubicación: Francia</p>
-                    <p>Curvas: 15</p>
-                </div>
+                <img src="paul.jpg" alt="Paul Ricard">
+                <h3>Paul Ricard</h3>
+                <p>Ubicación: Francia</p>
+                <p>Curvas: 15</p>
             </div>
-        </article>
+        </div>
 
-        <article class="circuito">
+        <div class="circuito">
             <div class="carta">
-                <div class="frente">
-                    <img src="imola2.jpg" alt="Imola">
-                    <h3>Imola</h3>
-                </div>
-                <div class="detras">
-                    <h3>Imola</h3>
-                    <p>Ubicación: Italia</p>
-                    <p>Curvas: 19</p>
-                </div>
+                <img src="imola2.jpg" alt="Imola">
+                <h3>Imola</h3>
+                <p>Ubicación: Italia</p>
+                <p>Curvas: 19</p>
             </div>
-        </article>
+        </div>
 
-        <article class="circuito">
+        <div class="circuito">
             <div class="carta">
-                <div class="frente">
-                    <img src="monza.jpg" alt="Monza">
-                    <h3>Monza</h3>
-                </div>
-                <div class="detras">
-                    <h3>Monza</h3>
-                    <p>Ubicación: Italia</p>
-                    <p>Curvas: 11</p>
-                </div>
+                <img src="monza.jpg" alt="Monza">
+                <h3>Monza</h3>
+                <p>Ubicación: Italia</p>
+                <p>Curvas: 11</p>
             </div>
-        </article>
+        </div>
 
-        <article class="circuito">
+        <div class="circuito">
             <div class="carta">
-                <div class="frente">
-                    <img src="qatar.webp" alt="Qatar">
-                    <h3>Qatar</h3>
-                </div>
-                <div class="detras">
-                    <h3>Qatar</h3>
-                    <p>Ubicación: Qatar</p>
-                    <p>Curvas: 16</p>
-                </div>
+                <img src="qatar.webp" alt="Qatar">
+                <h3>Qatar</h3>
+                <p>Ubicación: Qatar</p>
+                <p>Curvas: 16</p>
             </div>
-        </article>
+        </div>
 
-        <article class="circuito">
+        <div class="circuito">
             <div class="carta">
-                <div class="frente">
-                    <img src="cota.jpg" alt="COTA">
-                    <h3>COTA</h3>
-                </div>
-                <div class="detras">
-                    <h3>COTA</h3>
-                    <p>Ubicación: EE.UU.</p>
-                    <p>Curvas: 20</p>
-                </div>
+                <img src="cota.jpg" alt="COTA">
+                <h3>COTA</h3>
+                <p>Ubicación: EE.UU.</p>
+                <p>Curvas: 20</p>
             </div>
-        </article>
+        </div>
 
-    </section>
+    </div>
+</section>
+
 </body>
 </html>
