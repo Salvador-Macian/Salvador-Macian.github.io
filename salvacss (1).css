@@ -2,7 +2,7 @@ body {
     padding: 50px;
     text-align: center;
     background-repeat: no-repeat;
-    background-image: url(imagenes/lol.jpg);
+    background-image: url(dayrtona.jpg);
     background-size: cover;
 }
 
@@ -26,7 +26,7 @@ a{
 
 .carta {
     width: 420px;
-    height: 560px;
+    height: 600px;
     padding: 5px;
     margin-top: 50px;
     padding-top: 10px;
@@ -62,16 +62,26 @@ a{
 
 ol {
     display: flex;
-    text-decoration: rgb(255, 0, 0) solid underline;
+
+
 }
 
 li {
-    display: flex;
+    list-style: none;
     color: rgb(255, 0, 0);
     width: 30%;
+    height: 30px;
     font-size: 25px;
-    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    font-weight: bolder;
+    border: 1px solid white;
+    
+    
     justify-content: space-between;
+}
+li:hover{
+    background-color: white;
+
 }
 
 p {
@@ -94,20 +104,27 @@ h1 img:hover {
 }
 
 
+
 @media screen and (max-width: 480px) {
     body {
         padding: 20px;
         background-size: cover;
     }
+    h1>img{
+        width: 400px;
+        height: 200px;
+    }
 
     section:nth-child(1) {
         font-size: 20px;
         padding-top: 50px;
+        height: 200px;
     }
 
     .coches {
         flex-direction: column;
         gap: 20px;
+        
     }
 
     .carta {
@@ -115,6 +132,7 @@ h1 img:hover {
         height: auto;
         margin-top: 30px;
         padding: 5px;
+
     }
 
     .frente img {
@@ -130,10 +148,15 @@ h1 img:hover {
 
     li {
         width: 100%;
-        font-size: 18px;
+        font-size: 30px;
         margin: 5px 0;
         justify-content: center;
     }
+    li:hover{
+        background-color: black;
+        color: white;
+    }
+    
 
     .frente h3 {
         font-size: 18px;
