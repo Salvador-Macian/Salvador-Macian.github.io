@@ -88,3 +88,21 @@ img:hover {
 
   
 }
+.boton-volver {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    z-index: 1000;
+}
+
+.boton-volver:hover {
+    background-color: #555;
+}
