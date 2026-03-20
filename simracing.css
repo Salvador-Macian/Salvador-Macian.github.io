@@ -2,7 +2,7 @@
 body { 
     padding: 50px;
     text-align: center;
-    background-image: url(imagenes/fondonegro.webp);
+    background-color: black;
     background-size: cover;
     background-repeat: no-repeat;
 }
