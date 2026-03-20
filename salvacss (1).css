@@ -104,6 +104,65 @@ h1 img:hover {
 }
 
 
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+    body {
+        padding: 30px;
+        background-size: cover;
+    }
+
+    h1 > img {
+        width: 600px;
+        height: 200px;
+    }
+
+    section:nth-child(1) {
+        font-size: 24px;
+        padding-top: 70px;
+    }
+
+    .coches {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .carta {
+        width: 70%; 
+        height: auto;
+        margin-top: 30px;
+        padding: 10px;
+        padding-left: 120px;
+    }
+
+    .frente img {
+        width: 100%;
+        height: auto;
+    }
+
+    ol {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+
+    li {
+        width: 45%;
+        font-size: 16px;
+        margin: 5px;
+        text-align: center;
+      
+    }
+
+    .frente h3 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
 
 @media screen and (max-width: 480px) {
     body {
