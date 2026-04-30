@@ -1,0 +1,230 @@
+body {
+    padding: 50px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-image: url(dayrtona.jpg);
+    background-size: cover;
+}
+
+.coches {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 12px;
+}
+
+section:nth-child(1){
+    font-size: 32px;
+    padding-top: 100px;
+    color: rgb(255, 255, 255);
+}
+
+a{
+    color: red;
+    text-decoration: none;
+}
+
+.carta {
+    width: 420px;
+    height: 600px;
+    padding: 5px;
+    margin-top: 50px;
+    padding-top: 10px;
+    padding-left: 10px;
+    border-radius: 12px;
+    padding-bottom: 30px;
+}
+
+.carta:hover {
+    transform: scale(1.05);
+}
+
+.frente {
+    background: #ffffff;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    border: 1px solid black;
+}
+
+.frente img {
+    width: 420px;
+    height: 560px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.frente h3 {
+    margin: 10px 0;
+    font-size: 22px;
+}
+
+ol {
+    display: flex;
+
+
+}
+
+li {
+    list-style: none;
+    color: rgb(255, 0, 0);
+    width: 30%;
+    height: 30px;
+    font-size: 25px;
+    background-color: rgb(0, 0, 0);
+    font-weight: bolder;
+    border: 1px solid white;
+    
+    
+    justify-content: space-between;
+}
+li:hover{
+    background-color: white;
+
+}
+
+p {
+    color: white;
+    font-size: 17px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+h1 img {
+    width: 800px;
+    height: 250px;
+    border-radius: 12px;
+}
+
+h1 img:hover {
+    box-shadow: 0 0 10px 2px rgba(192, 199, 5, 0.5);
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+    body {
+        padding: 30px;
+        background-size: cover;
+    }
+
+    h1 > img {
+        width: 600px;
+        height: 200px;
+    }
+
+    section:nth-child(1) {
+        font-size: 24px;
+        padding-top: 70px;
+        color: rgb(255, 255, 255);
+    }
+
+    .coches {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .carta {
+        width: 70%; 
+        height: auto;
+        margin-top: 30px;
+        padding: 10px;
+        padding-left: 120px;
+    }
+
+    .frente img {
+        width: 100%;
+        height: auto;
+    }
+
+    ol {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+
+    li {
+        width: 45%;
+        font-size: 16px;
+        margin: 5px;
+        text-align: center;
+      
+    }
+
+    .frente h3 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    body {
+        padding: 20px;
+        background-size: cover;
+    }
+    h1>img{
+        width: 400px;
+        height: 200px;
+    }
+
+    section:nth-child(1) {
+        font-size: 20px;
+        padding-top: 50px;
+        height: 200px;
+        color: rgb(255, 255, 255);
+
+    }
+
+    .coches {
+        flex-direction: column;
+        gap: 20px;
+        
+    }
+
+    .carta {
+        width: 90%;
+        height: auto;
+        margin-top: 30px;
+        padding: 5px;
+
+    }
+
+    .frente img {
+        width: 100%;
+        height: auto;
+    }
+
+    ol {
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+    }
+
+    li {
+        width: 100%;
+        font-size: 30px;
+        margin: 5px 0;
+        justify-content: center;
+    }
+    li:hover{
+        background-color: black;
+        color: white;
+    }
+    
+
+    .frente h3 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+}
