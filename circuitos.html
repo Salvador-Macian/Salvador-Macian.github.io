@@ -1,196 +1,257 @@
 <!DOCTYPE html>
-<html lang="es"> <head>
+<html lang="es">
+<head>
 <meta charset="UTF-8">
 <title>Circuitos</title>
+
 <style>
     @media (max-width: 480px) {
+
     body {
         padding: 15px;
     }
+
     h1 {
         font-size: 22px;
         margin-bottom: 25px;
     }
+
     .circuitos {
         flex-direction: column;
         align-items: center;
         gap: 20px;
     }
+
     .circuito {
         width: 100%;
         max-width: 320px;
         height: auto;
         flex-wrap: wrap;
     }
+
     .carta {
         height: auto;
     }
+
     .carta img {
         height: 180px;
     }
+
     .carta h3 {
         font-size: 18px;
     }
+
     .carta p {
         font-size: 14px;
     }
 }
+    
+
     body {
         background-color: #b6b3b3;
-        background-size: cover;
+      
+    background-size: cover;
+        
         margin: 0;
         padding: 40px;
         text-align: center;
+
     }
+
     h1 {
-        color: #333;
-        font-size: 36px;
-        margin-bottom: 50px;
-        text-transform: uppercase;
-        letter-spacing: 2px;
+        margin-bottom: 53px;
+        color: white;
+        font-size: 40px;
     }
+
     .circuitos {
         display: flex;
-        justify-content: center;
         flex-wrap: wrap;
+        justify-content: center;
         gap: 30px;
     }
+
     .circuito {
-        width: 280px;
+        width: 300px;
         height: 400px;
-        perspective: 1000px;
     }
+
     .carta {
         width: 100%;
         height: 100%;
-        background-color: #fff;
-        border-radius: 15px;
-        box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        border-radius: 12px;
         overflow: hidden;
-        transition: transform 0.3s ease;
+        box-shadow: 0 4px 10px black;
+        background-color: black;
+        color: white;
         display: flex;
         flex-direction: column;
     }
-    .circuito:hover .carta {
-        transform: translateY(-10px);
-    }
+    .carta:hover {
+    transform: scale(1.10);
+    
+}
+
     .carta img {
         width: 100%;
-        height: 200px;
+        height: 80%;
         object-fit: cover;
     }
+
     .carta h3 {
-        margin: 20px 0 10px;
+        margin: 10px 0;
         font-size: 22px;
-        color: #e67e22;
     }
+
     .carta p {
         margin: 5px 0;
         font-size: 16px;
-        color: #666;
     }
+    .boton{
+    display: inline-block;
+    margin-bottom: 30px;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.boton:hover {
+    background-color: #333;
+}
 </style>
+
 </head>
+
 <body>
 
-    <header role="banner">
-        <h1>Circuitos</h1>
-    </header>
+<h1>Circuitos</h1>
+<a href="index.html" class="boton">INICIO</a>
 
-    <main role="main">
-        <div class="circuitos">
-            
-            <div class="circuito">
-                <div class="carta">
-                    <img src="lemans2.jpg" alt="Circuito de Le Mans">
-                    <h3>Le Mans</h3>
-                    <p>Ubicación: Francia</p>
-                    <p>Curvas: 38</p>
-                </div>
-            </div>
+<section>
+    <div class="circuitos">
 
-            <div class="circuito">
-                <div class="carta">
-                    <img src="spa.jpg" alt="Circuito de Spa-Francorchamps">
-                    <h3>Spa-Francorchamps</h3>
-                    <p>Ubicación: Bélgica</p>
-                    <p>Curvas: 20</p>
-                </div>
-            </div>
-
-            <div class="circuito">
-                <div class="carta">
-                    <img src="sebring.jpg" alt="Circuito de Sebring">
-                    <h3>Sebring</h3>
-                    <p>Ubicación: EE. UU.</p>
-                    <p>Curvas: 17</p>
-                </div>
-            </div>
-
-            <div class="circuito">
-                <div class="carta">
-                    <img src="fuji.jpg" alt="Circuito de Fuji">
-                    <h3>Fuji</h3>
-                    <p>Ubicación: Japón</p>
-                    <p>Curvas: 16</p>
-                </div>
-            </div>
-
-            <div class="circuito">
-                <div class="carta">
-                    <img src="silverstone.jpg" alt="Circuito de Silverstone">
-                    <h3>Silverstone</h3>
-                    <p>Ubicación: Reino Unido</p>
-                    <p>Curvas: 18</p>
-                </div>
-            </div>
-
-            <div class="circuito">
-                <div class="carta">
-                    <img src="paul.jpg" alt="Circuito de Paul Ricard">
-                    <h3>Paul Ricard</h3>
-                    <p>Ubicación: Francia</p>
-                    <p>Curvas: 15</p>
-                </div>
-            </div>
-
-            <div class="circuito">
-                <div class="carta">
-                    <img src="imola2.jpg" alt="Circuito de Imola">
-                    <h3>Imola</h3>
-                    <p>Ubicación: Italia</p>
-                    <p>Curvas: 19</p>
-                </div>
-            </div>
-
-            <div class="circuito">
-                <div class="carta">
-                    <img src="monza.jpg" alt="Circuito de Monza">
-                    <h3>Monza</h3>
-                    <p>Ubicación: Italia</p>
-                    <p>Curvas: 11</p>
-                </div>
-            </div>
-
-            <div class="circuito">
-                <div class="carta">
-                    <img src="qatar.webp" alt="Circuito de Qatar">
-                    <h3>Qatar</h3>
-                    <p>Ubicación: Qatar</p>
-                    <p>Curvas: 16</p>
-                </div>
-            </div>
-
-            <div class="circuito">
-                <div class="carta">
-                    <img src="portimao.webp" alt="Circuito de Portimao">
-                    <h3>Portimão</h3>
-                    <p>Ubicación: Portugal</p>
-                    <p>Curvas: 15</p>
-                </div>
+        <div class="circuito">
+            <div class="carta">
+                <img src="dunlop.webp" alt="Le Mans">
+                <h3>Le Mans</h3>
+                <p>Ubicación: Francia</p>
+                <p>Curvas: 38</p>
             </div>
         </div>
-    </main>
+
+        <div class="circuito">
+            <div class="carta">
+                <img src="curvaza.webp" alt="Spa-Francorchamps">
+                <h3>Spa-Francorchamps</h3>
+                <p>Ubicación: Bélgica</p>
+                <p>Curvas: 19</p>
+            </div>
+        </div>
+
+        <div class="circuito">
+            <div class="carta">
+                <img src="atardecersebting.jpg" alt="Sebring">
+                <h3>Sebring</h3>
+                <p>Ubicación: EE.UU.</p>
+                <p>Curvas: 17</p>
+            </div>
+        </div>
+
+        <div class="circuito">
+            <div class="carta">
+                <img src="inter.webp" alt="Interlagos">
+                <h3>Interlagos</h3>
+                <p>Ubicación: Brasil</p>
+                <p>Curvas: 15</p>
+            </div>
+        </div>
+
+        <div class="circuito">
+            <div class="carta">
+                <img src="bahrein.jpg" alt="Bahrein">
+                <h3>Bahrein</h3>
+                <p>Ubicación: Bahrein</p>
+                <p>Curvas: 15</p>
+            </div>
+        </div>
+
+        <div class="circuito">
+            <div class="carta">
+                <img src="fuji.jpg" alt="Fuji">
+                <h3>Fuji</h3>
+                <p>Ubicación: Japón</p>
+                <p>Curvas: 16</p>
+            </div>
+        </div>
+
+        <div class="circuito">
+            <div class="carta">
+                <img src="portimao.jpg" alt="Portimao">
+                <h3>Portimao</h3>
+                <p>Ubicación: Portugal</p>
+                <p>Curvas: 15</p>
+            </div>
+        </div>
+
+        <div class="circuito">
+            <div class="carta">
+                <img src="silvetstobr.jpg" alt="Silverstone">
+                <h3>Silverstone</h3>
+                <p>Ubicación: Reino Unido</p>
+                <p>Curvas: 18</p>
+            </div>
+        </div>
+
+        <div class="circuito">
+            <div class="carta">
+                <img src="paul.jpg" alt="Paul Ricard">
+                <h3>Paul Ricard</h3>
+                <p>Ubicación: Francia</p>
+                <p>Curvas: 15</p>
+            </div>
+        </div>
+
+        <div class="circuito">
+            <div class="carta">
+                <img src="imola2.jpg" alt="Imola">
+                <h3>Imola</h3>
+                <p>Ubicación: Italia</p>
+                <p>Curvas: 19</p>
+            </div>
+        </div>
+
+        <div class="circuito">
+            <div class="carta">
+                <img src="monza.jpg" alt="Monza">
+                <h3>Monza</h3>
+                <p>Ubicación: Italia</p>
+                <p>Curvas: 11</p>
+            </div>
+        </div>
+
+        <div class="circuito">
+            <div class="carta">
+                <img src="qatar.webp" alt="Qatar">
+                <h3>Qatar</h3>
+                <p>Ubicación: Qatar</p>
+                <p>Curvas: 16</p>
+            </div>
+        </div>
+
+        <div class="circuito">
+            <div class="carta">
+                <img src="cota.jpg" alt="COTA">
+                <h3>COTA</h3>
+                <p>Ubicación: EE.UU.</p>
+                <p>Curvas: 20</p>
+            </div>
+        </div>
+
+    </div>
+</section>
 
 </body>
 </html>
