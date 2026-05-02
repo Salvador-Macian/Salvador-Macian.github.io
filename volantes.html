@@ -1,53 +1,60 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Volantes para SimRacing</title>
+    <title>Tipos de Base</title>
     <style>
         body {
             background-image: url(imagenes/fondonegro.webp); 
             background-size: cover;
             background-repeat: no-repeat;
+            background-color: #000;
             margin: 0;
             padding: 20px;
+            font-family: Arial, sans-serif;
         }
-        h1 {
-            color: red;
+
+        h1, h2 {
+            color: #ff5555; 
             text-align: center;
         }
-        h2 {
-            color: red;
-            text-align: center;
-        }
+
         .migas {
             position: absolute;   
-            top: 30px;           
-            left: 15px;           
-            font-size: 14px;  
-            z-index: 100;       
+            top: 25px;                       
+            left: 15px;                       
+            font-size: 19px; 
+            z-index: 100;
+            background-color: rgba(0, 0, 0, 0.8); 
+            padding: 10px 15px;
+            border-radius: 8px;
         }
+
         .migas a {
             text-decoration: none;
             color: #ffffff;
+            font-weight: bold;
         }
+
         .migas a:hover {
             text-decoration: underline;
         }
-        .migas span {
-            color: #ffffff;
-        }
+
         .migas .actual {
             color: white;
+            border-bottom: 2px solid #ff5555;
         }
+
         .bases {
             display: flex;
             flex-direction: column;
             gap: 50px;
             padding: 20px;
+            margin-top: 80px;
             align-items: center;
         }
+
         .filaspesadas {
             display: flex;
             gap: 30px;
@@ -55,11 +62,13 @@
             flex-wrap: wrap;
             width: 100%;
         }
+
         .coche {
-            width: 300px;
-            height: 400px;
+            width: 280px;
+            height: 350px;
             perspective: 1000px;
         }
+
         .carta {
             width: 100%;
             height: 100%;
@@ -67,11 +76,13 @@
             transform-style: preserve-3d;
             transition: transform 0.6s;
             border-radius: 12px;
-            box-shadow: 0 4px 10px black;
+            box-shadow: 0 4px 15px black;
         }
+
         .coche:hover .carta {
             transform: rotateY(180deg);
         }
+
         .frente, .detras {
             position: absolute;
             width: 100%;
@@ -86,17 +97,22 @@
             background-color: black;
             color: white;
             text-align: center;
+            border: 1px solid #333;
         }
+
         .detras {
             transform: rotateY(180deg);
             padding: 20px;
             box-sizing: border-box;
         }
+
         .frente img {
             width: 100%;
-            height: 80%;
+            height: 75%;
             object-fit: cover;
+            border-radius: 8px 8px 0 0;
         }
+
         .frente h3 {
             margin: 10px 0;
             font-size: 18px;
@@ -104,146 +120,152 @@
     </style>
 </head>
 <body>
-
-    <nav class="migas" aria-label="Breadcrumb">  
-        <a href="salvaweb.html">Inicio</a><span> › </span><a href="productossim.html">Componentes</a><span> › </span> <span class="actual" aria-current="page">Volantes</span>    
+    <nav class="migas" aria-label="Breadcrumb">          
+        <a href="index.html">Inicio</a><span aria-hidden="true" style="color:white; margin:0 8px;"> › </span><a href="productossim.html">Componentes</a><span aria-hidden="true" style="color:white; margin:0 8px;"> › </span> <span class="actual" aria-current="page">Tipos de Base</span>        
     </nav>
 
-    <header role="banner">
-        <h1>Volantes para SimRacing</h1>
+    <header role="banner">        
+        <h1>Tipos de Base</h1>    
     </header>
 
-    <main>
-        <section class="bases" aria-label="Catálogo de volantes por marca">
+    <main role="main">        
+        <section class="bases" aria-label="Catálogo de bases por potencia">                        
             
-            <section aria-labelledby="moza-title">
-                <h2 id="moza-title">Volantes de Moza</h2>
-                <div class="filaspesadas" role="list">
-                    <article class="coche" role="listitem">
-                        <div class="carta">
-                            <div class="frente">
-                                <img src="imagenes/mozavolante.webp" alt="Volante Moza KS">
-                                <h3>Moza KS</h3>
-                            </div>
-                            <div class="detras">
-                                <h3>Moza KS</h3>
-                                <p>Volante tipo GT/Fórmula de 300mm fabricado en fibra de carbono reforzada.</p>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="coche" role="listitem">
-                        <div class="carta">
-                            <div class="frente">
-                                <img src="imagenes/kspro.webp" alt="Volante Moza FSR Formula">
-                                <h3>Moza FSR</h3>
-                            </div>
-                            <div class="detras">
-                                <h3>Moza FSR</h3>
-                                <p>Volante de alta gama con pantalla integrada para telemetría en tiempo real.</p>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="coche" role="listitem">
-                        <div class="carta">
-                            <div class="frente">
-                                <img src="imagenes/rsv2.webp" alt="Volante Moza RS V2">
-                                <h3>Moza RS V2</h3>
-                            </div>
-                            <div class="detras">
-                                <h3>Moza RS V2</h3>
-                                <p>Volante circular de cuero para máxima versatilidad en GT y Drift.</p>
-                            </div>
-                        </div>
-                    </article>
-                </div>
+            <section aria-labelledby="rango-bajo">                
+                <h2 id="rango-bajo">Bases de 3-6 Newton</h2>                
+                <div class="filaspesadas" role="list">                    
+                    <article class="coche" role="listitem">                        
+                        <div class="carta">                            
+                            <div class="frente">                                
+                                <img src="imagenes/r3.webp" alt="Base Moza R3">                                
+                                <h3>Moza R3</h3>                            
+                            </div>                            
+                            <div class="detras">                                
+                                <h3>Moza R3</h3>                                
+                                <p>Fuerza: 3.9 Nm</p>                                
+                                <p>Ideal para iniciación con tecnología Direct Drive compacta.</p>                            
+                            </div>                        
+                        </div>                    
+                    </article>                    
+                    <article class="coche" role="listitem">                        
+                        <div class="carta">                            
+                            <div class="frente">                                
+                                <img src="imagenes/t5555.jpg" alt="Base Thrustmaster T300">                                
+                                <h3>Thrustmaster T300</h3>                            
+                            </div>                            
+                            <div class="detras">                                
+                                <h3>T300 RS</h3>                                
+                                <p>Fuerza: 3.9 Nm</p>                                
+                                <p>Sistema de correa suave y preciso, un clásico del simracing.</p>                            
+                            </div>                        
+                        </div>                    
+                    </article>                    
+                    <article class="coche" role="listitem">                        
+                        <div class="carta">                            
+                            <div class="frente">                                
+                                <img src="imagenes/pexe.jpg" alt="Base PXN V12">                                
+                                <h3>PXN V12</h3>                            
+                            </div>                            
+                            <div class="detras">                                
+                                <h3>PXN V12</h3>                                
+                                <p>Fuerza: 6 Nm</p>                                
+                                <p>Base Direct Drive de entrada con excelente relación calidad-precio.</p>                            
+                            </div>                        
+                        </div>                    
+                    </article>                
+                </div>            
             </section>
 
-            <section aria-labelledby="fana-title">
-                <h2 id="fana-title">Volantes de Fanatec</h2>
-                <div class="filaspesadas" role="list">
-                    <article class="coche" role="listitem">
-                        <div class="carta">
-                            <div class="frente">
-                                <img src="imagenes/bmwfana.webp" alt="Volante Fanatec BMW M4 GT3">
-                                <h3>Fanatec BMW M4 GT3</h3>
-                            </div>
-                            <div class="detras">
-                                <h3>BMW M4 GT3</h3>
-                                <p>Réplica exacta del volante real de competición utilizado en el BMW M4 GT3.</p>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="coche" role="listitem">
-                        <div class="carta">
-                            <div class="frente">
-                                <img src="imagenes/FANATECGT3.webp" alt="Volante Fanatec CSL Elite McLaren GT3 V2">
-                                <h3>McLaren GT3 V2</h3>
-                            </div>
-                            <div class="detras">
-                                <h3>McLaren GT3 V2</h3>
-                                <p>El volante más popular de Fanatec, réplica oficial del McLaren 720S GT3.</p>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="coche" role="listitem">
-                        <div class="carta">
-                            <div class="frente">
-                                <img src="imagenes/formula.jpg" alt="Volante Fanatec ClubSport Formula V2.5">
-                                <h3>Formula V2.5</h3>
-                            </div>
-                            <div class="detras">
-                                <h3>Formula V2.5</h3>
-                                <p>Compacto y robusto, ideal para monoplazas con levas magnéticas de fibra de carbono.</p>
-                            </div>
-                        </div>
-                    </article>
-                </div>
+            <section aria-labelledby="rango-medio">                
+                <h2 id="rango-medio">Bases de 8-12 Newton</h2>                
+                <div class="filaspesadas" role="list">                    
+                    <article class="coche" role="listitem">                        
+                        <div class="carta">                            
+                            <div class="frente">                                
+                                <img src="imagenes/r99999.jpg" alt="Base Moza R9">                                
+                                <h3>Moza R9</h3>                            
+                            </div>                            
+                            <div class="detras">                                
+                                <h3>Moza R9</h3>                                
+                                <p>Fuerza: 9 Nm</p>                                
+                                <p>El estándar para setups equilibrados, gran detalle de Force Feedback.</p>                            
+                            </div>                        
+                        </div>                    
+                    </article>                    
+                    <article class="coche" role="listitem">                        
+                        <div class="carta">                            
+                            <div class="frente">                                
+                                <img src="imagenes/descarga.jpg" alt="Base Fanatec CSL DD">                                
+                                <h3>Fanatec CSL DD</h3>                            
+                            </div>                            
+                            <div class="detras">                                
+                                <h3>Fanatec CSL DD</h3>                                
+                                <p>Fuerza: 8 Nm</p>                                
+                                <p>Tecnología alemana con ecosistema compatible para consola y PC.</p>                            
+                            </div>                        
+                        </div>                    
+                    </article>                    
+                    <article class="coche" role="listitem">                        
+                        <div class="carta">                            
+                            <div class="frente">                                
+                                <img src="imagenes/r122222.webp" alt="Base Moza R12">                                
+                                <h3>Moza R12</h3>                            
+                            </div>                            
+                            <div class="detras">                                
+                                <h3>Moza R12</h3>                                
+                                <p>Fuerza: 12 Nm</p>                                
+                                <p>Potencia intermedia para sentir cada detalle del asfalto sin fatiga excesiva.</p>                            
+                            </div>                        
+                        </div>                    
+                    </article>                
+                </div>            
             </section>
 
-            <section aria-labelledby="simlab-title">
-                <h2 id="simlab-title">Volantes Sim-Lab</h2>
-                <div class="filaspesadas" role="list">
-                    <article class="coche" role="listitem">
-                        <div class="carta">
-                            <div class="frente">
-                                <img src="imagenes/retro.webp" alt="Volante Sim-Lab Retro GT">
-                                <h3>Sim-Lab XB1-Loadcell</h3>
-                            </div>
-                            <div class="detras">
-                                <h3>Sim-Lab XB1</h3>
-                                <p>Diseño enfocado a la máxima rigidez y respuesta táctil para pilotos profesionales.</p>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="coche" role="listitem">
-                        <div class="carta">
-                            <div class="frente">
-                                <img src="imagenes/doce.jpg" alt="Volante Sim-Lab Precision">
-                                <h3>Sim-Lab GT3</h3>
-                            </div>
-                            <div class="detras">
-                                <h3>Sim-Lab GT3</h3>
-                                <p>Ergonomía avanzada con botones retroiluminados y materiales premium.</p>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="coche" role="listitem">
-                        <div class="carta">
-                            <div class="frente">
-                                <img src="imagenes/prosche.webp" alt="Volante Sim-Lab Porsche Cup">
-                                <h3>Sim-Lab Porsche Cup</h3>
-                            </div>
-                            <div class="detras">
-                                <h3>Porsche Cup Replica</h3>
-                                <p>Fiel reproducción del volante utilizado en la Porsche Supercup.</p>
-                            </div>
-                        </div>
-                    </article>
-                </div>
+            <section aria-labelledby="rango-alto">                
+                <h2 id="rango-alto">Bases de 16-21 Newton</h2>                
+                <div class="filaspesadas" role="list">                    
+                    <article class="coche" role="listitem">                        
+                        <div class="carta">                            
+                            <div class="frente">                                
+                                <img src="imagenes/r16.jpg" alt="Base Moza R16">                                
+                                <h3>Moza R16</h3>                            
+                            </div>                            
+                            <div class="detras">                                
+                                <h3>Moza R16</h3>                                
+                                <p>Fuerza: 16 Nm</p>                                
+                                <p>Diseño inspirado en superdeportivos con un motor de alta fidelidad.</p>                            
+                            </div>                        
+                        </div>                    
+                    </article>                    
+                    <article class="coche" role="listitem">                        
+                        <div class="carta">                            
+                            <div class="frente">                                
+                                <img src="imagenes/111111.webp" alt="Base Simucube 2 Pro">                                
+                                <h3>Simucube 2 Pro</h3>                            
+                            </div>                            
+                            <div class="detras">                                
+                                <h3>Simucube 2 Pro</h3>                                
+                                <p>Fuerza: 21 Nm</p>                                
+                                <p>Considerada una de las mejores bases del mundo por su latencia ultra baja.</p>                            
+                            </div>                        
+                        </div>                    
+                    </article>                    
+                    <article class="coche" role="listitem">                        
+                        <div class="carta">                            
+                            <div class="frente">                                
+                                <img src="imagenes/tec.jpg" alt="Base Fanatec DD2">                                
+                                <h3>Fanatec Podium DD2</h3>                            
+                            </div>                            
+                            <div class="detras">                                
+                                <h3>Fanatec DD2</h3>                                
+                                <p>Fuerza: 25 Nm Peak</p>                                
+                                <p>El tope de gama de Fanatec con pantalla OLED y garantía extendida.</p>                            
+                            </div>                        
+                        </div>                    
+                    </article>                
+                </div>            
             </section>
-
-        </section>
+        </section>    
     </main>
-
 </body>
 </html>
