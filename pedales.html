@@ -8,55 +8,40 @@
         @media (max-width: 480px) {
             h1 { font-size: 22px; }
             h2 { font-size: 18px; }
-            .bases
-             { padding: 10px; gap: 20px; }
-            .filaspesadas
-             { flex-direction: column; align-items: center; }
-            .bases img
-             { width: 90%; max-width: 300px; }
-            .migas
-             { font-size: 12px; top: 10px; left: 10px; }
+            .bases { padding: 10px; gap: 20px; }
+            .filaspesadas { flex-direction: column; align-items: center; }
+            .bases img { width: 90%; max-width: 300px; }
+            .migas { font-size: 12px; top: 10px; left: 10px; }
         }
+
         @media (min-width: 481px) and (max-width: 1024px) {
             h1 { font-size: 30px; }
             h2 { font-size: 24px; }
-            .bases { padding: 20px; }
+            .bases { padding: 20px; gap: 25px; }
+            .filaspesadas { justify-content: center; gap: 15px; }
+            .bases img { width: 200px; }
+            .migas { font-size: 13px; }
         }
-        .bases
-         { display: flex; flex-direction: column; gap: 30px; padding: 20px; }
-        .bases .filaspesadas
-         { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
-        .bases img 
-        { width: 250px; height: auto; border-radius: 8px; border: 1px solid; }
-        body
-         { background-color: black; background-size: cover; background-repeat: no-repeat; }
-        h1
-         { color: white; text-align: center; }
-        h2 
-        { color: white; }
-        span
-         { color: white; }
-        .migas
-         { position: absolute; top: 70px; left: 15px; font-size: 14px; z-index: 100; }
-        .migas a 
-        { text-decoration: none; color: white; }
-        .migas a:hover 
-        { text-decoration: underline; }
-        .migas span
-         { color: #ffffff; }
-        .migas .actual
-         { color: white; }
-        h1 { color: red; }
+
+        .bases { display: flex; flex-direction: column; gap: 30px; padding: 20px; }
+        .bases .filaspesadas { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
+        .bases img { width: 250px; height: auto; border-radius: 8px; box-shadow: 8px rgb(6, 101, 6); border: 1px solid; }
+        
+        body { background-color: black; background-size: cover; background-repeat: no-repeat; }
+        h1 { color: red; text-align: center; }
         h2 { color: red; }
+        span { color: white; }
+
+        .migas { position: absolute; top: 70px; left: 15px; font-size: 14px; z-index: 100; }
+        .migas a { text-decoration: none; color: white; }
+        .migas a:hover { text-decoration: underline; }
+        .migas .actual { color: white; }
     </style>
 </head>
 <body>
-    <nav class="migas" aria-label="Ruta de navegación">
-        <a href="index.html">Inicio</a>
-        <span aria-hidden="true">›</span>
-        <a href="productossim.html">Componentes</a>
-        <span aria-hidden="true">›</span> 
-        <span class="actual" aria-current="page">Pedales</span>
+
+    <nav class="migas" aria-label="Breadcrumb">
+        <a href="index.html">Inicio</a><span aria-hidden="true">›</span><a href="productossim.html">Componentes</a><span aria-hidden="true">›</span> <span class="actual" aria-current="page">Pedales</span>
     </nav>
 
     <header role="banner">
@@ -64,28 +49,26 @@
     </header>
 
     <main role="main">
-        <section class="bases">
+        <section class="bases" aria-label="Catálogo de pedales por marcas">
             <article class="filaspesadas">
-                <h2>Gama Media</h2>
-                <img src="imagenes/r3pedales.webp" alt="Pedales Moza SR-P Lite">
-                <img src="imagenes/cslpedales.webp" alt="Pedales Fanatec CSL Pedals">
-                <img src="imagenes/t300pedales.webp" alt="Pedales Thrustmaster T3PM">
+                <h2>Pedales de Moza</h2>
+                <img src="crp2.webp" alt="Pedales Moza CRP2 de alta gama">
+                <img src="srp.webp" alt="Pedales Moza SR-P con célula de carga">
             </article>
 
             <article class="filaspesadas">
-                <h2>Gama Alta</h2>
-                <img src="imagenes/crpppedales.webp" alt="Pedales Moza CRP">
-                <img src="imagenes/v3pedales.webp" alt="Pedales Fanatec ClubSport V3">
-                <img src="imagenes/p1000.webp" alt="Pedales Simagic P1000">
+                <h2>Pedales de Fanatec</h2>
+                <img src="csl.jpg" alt="Pedales Fanatec CSL">
+                <img src="clubb.webp" alt="Pedales Fanatec ClubSport V3">
             </article>
 
             <article class="filaspesadas">
-                <h2>Gama Profesional</h2>
-                <img src="imagenes/mpedales.webp" alt="Pedales Heusinkveld Ultimate+">
-                <img src="imagenes/activepedal.webp" alt="Pedales Simucube ActivePedal">
-                <img src="imagenes/aseteppedales.webp" alt="Pedales Asetek Invicta">
+                <h2>Pedales de Simagic</h2>
+                <img src="p1000.jpg" alt="Pedales Simagic P1000 modulares">
+                <img src="cpp2.jpg" alt="Pedales Simagic P2000 hidráulicos">
             </article>
         </section>
     </main>
+
 </body>
 </html>
