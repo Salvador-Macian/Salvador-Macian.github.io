@@ -5,44 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tipos de Base</title>
     <style>
-        .bases {
-            display: flex;
-            flex-direction: column;
-            gap: 30px;         
-            padding: 20px;
-        }
-        .bases .filaspesadas {
-            display: flex;
-            gap: 20px;            
-            justify-content: center;
-            flex-wrap: wrap;       
-        }
-        .bases img {
-            width: 250px;           
-            height: auto;
-            border-radius: 8px;    
-            box-shadow: 8px rgb(6, 101, 6); 
-        }
         body {
-            background-color: black;
+            background-image: url(imagenes/fondonegro.webp); 
             background-size: cover;
             background-repeat: no-repeat;
+            margin: 0;
+            padding: 20px;
         }
-        h1 {
-            color: white;
+        h1, h2 {
+            color: red;
             text-align: center;
         }
-        h2 {
-            color: white;
-        }
-        span {
-            color: white;
-        }
         .migas {
-            position: absolute; 
-            top: 70px;         
-            left: 15px;         
-            font-size: 14px;
+            position: absolute;   
+            top: 30px;           
+            left: 15px;           
+            font-size: 14px;  
             z-index: 100;       
         }
         .migas a {
@@ -58,50 +36,219 @@
         .migas .actual {
             color: white;
         }
-        h1 {
-            color: red;
+        .bases {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            padding: 20px;
+            align-items: center;
         }
-        h2 {
-            color: red;
+        .filaspesadas {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+        .coche {
+            width: 280px;
+            height: 350px;
+            perspective: 1000px;
+        }
+        .carta {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform 0.6s;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px black;
+        }
+        .coche:hover .carta {
+            transform: rotateY(180deg);
+        }
+        .frente, .detras {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            overflow: hidden;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+        .detras {
+            transform: rotateY(180deg);
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .frente img {
+            width: 100%;
+            height: 75%;
+            object-fit: cover;
+            border-radius: 8px 8px 0 0;
+        }
+        .frente h3 {
+            margin: 10px 0;
+            font-size: 18px;
         }
     </style>
 </head>
 <body>
-    <nav class="migas" aria-label="navegación">
-        <a href="index.html">Inicio</a>
-        <span aria-hidden="true">›</span>
-        <a href="productossim.html">Componentes</a>
-        <span aria-hidden="true">›</span> 
-        <span class="actual" aria-current="page">Tipos de Base</span>
+
+    <nav class="migas" aria-label="Breadcrumb">  
+        <a href="index.html">Inicio</a><span> › </span><a href="productossim.html">Componentes</a><span> › </span> <span class="actual" aria-current="page">Tipos de Base</span>    
     </nav>
 
     <header role="banner">
         <h1>Tipos de Base</h1>
     </header>
 
-    <main role="main">
-        <section class="bases">
-            <article class="filaspesadas">
-                <h2>Bases de 3-6 Newton</h2>
-                <img src="imagenes/r3.webp" alt="Base Moza R3">
-                <img src="imagenes/t5555.jpg" alt="Base Thrustmaster T128">
-                <img src="imagenes/fanteclogo.webp" alt="Base Fanatec CSL DD">
-            </article>
+    <main>
+        <section class="bases" aria-label="Catálogo de bases por potencia">
+            
+            <section aria-labelledby="rango-bajo">
+                <h2 id="rango-bajo">Bases de 3-6 Newton</h2>
+                <div class="filaspesadas" role="list">
+                    <article class="coche" role="listitem">
+                        <div class="carta">
+                            <div class="frente">
+                                <img src="imagenes/r3.webp" alt="Base Moza R3">
+                                <h3>Moza R3</h3>
+                            </div>
+                            <div class="detras">
+                                <h3>Moza R3</h3>
+                                <p>Fuerza: 3.9 Nm</p>
+                                <p>Ideal para iniciación con tecnología Direct Drive compacta.</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="coche" role="listitem">
+                        <div class="carta">
+                            <div class="frente">
+                                <img src="imagenes/t5555.jpg" alt="Base Thrustmaster T300">
+                                <h3>Thrustmaster T300</h3>
+                            </div>
+                            <div class="detras">
+                                <h3>T300 RS</h3>
+                                <p>Fuerza: 3.9 Nm</p>
+                                <p>Sistema de correa suave y preciso, un clásico del simracing.</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="coche" role="listitem">
+                        <div class="carta">
+                            <div class="frente">
+                                <img src="imagenes/pexe.jpg" alt="Base PXN V12">
+                                <h3>PXN V12</h3>
+                            </div>
+                            <div class="detras">
+                                <h3>PXN V12</h3>
+                                <p>Fuerza: 6 Nm</p>
+                                <p>Base Direct Drive de entrada con excelente relación calidad-precio.</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
 
-            <article class="filaspesadas">
-                <h2>Bases de 8-12 Newton</h2>
-                <img src="imagenes/r9.webp" alt="Base Moza R9">
-                <img src="imagenes/r12.webp" alt="Base Moza R12">
-                <img src="imagenes/vrs.jpg" alt="Base VRS DirectForce Pro">
-            </article>
+            <section aria-labelledby="rango-medio">
+                <h2 id="rango-medio">Bases de 8-12 Newton</h2>
+                <div class="filaspesadas" role="list">
+                    <article class="coche" role="listitem">
+                        <div class="carta">
+                            <div class="frente">
+                                <img src="imagenes/r99999.jpg" alt="Base Moza R9">
+                                <h3>Moza R9</h3>
+                            </div>
+                            <div class="detras">
+                                <h3>Moza R9</h3>
+                                <p>Fuerza: 9 Nm</p>
+                                <p>El estándar para setups equilibrados, gran detalle de Force Feedback.</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="coche" role="listitem">
+                        <div class="carta">
+                            <div class="frente">
+                                <img src="imagenes/descarga.jpg" alt="Base Fanatec CSL DD">
+                                <h3>Fanatec CSL DD</h3>
+                            </div>
+                            <div class="detras">
+                                <h3>Fanatec CSL DD</h3>
+                                <p>Fuerza: 8 Nm</p>
+                                <p>Tecnología alemana con ecosistema compatible para consola y PC.</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="coche" role="listitem">
+                        <div class="carta">
+                            <div class="frente">
+                                <img src="imagenes/r122222.webp" alt="Base Moza R12">
+                                <h3>Moza R12</h3>
+                            </div>
+                            <div class="detras">
+                                <h3>Moza R12</h3>
+                                <p>Fuerza: 12 Nm</p>
+                                <p>Potencia intermedia para sentir cada detalle del asfalto sin fatiga excesiva.</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
 
-            <article class="filaspesadas">
-                <h2>Bases de 15-25 Newton</h2>
-                <img src="imagenes/r21.webp" alt="Base Moza R21">
-                <img src="imagenes/simucube.webp" alt="Base Simucube 2 Pro">
-                <img src="imagenes/launica.jpg" alt="Base Fanatec Podium DD2">
-            </article>
+            <section aria-labelledby="rango-alto">
+                <h2 id="rango-alto">Bases de 16-21 Newton</h2>
+                <div class="filaspesadas" role="list">
+                    <article class="coche" role="listitem">
+                        <div class="carta">
+                            <div class="frente">
+                                <img src="imagenes/r16.jpg" alt="Base Moza R16">
+                                <h3>Moza R16</h3>
+                            </div>
+                            <div class="detras">
+                                <h3>Moza R16</h3>
+                                <p>Fuerza: 16 Nm</p>
+                                <p>Diseño inspirado en superdeportivos con un motor de alta fidelidad.</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="coche" role="listitem">
+                        <div class="carta">
+                            <div class="frente">
+                                <img src="imagenes/111111.webp" alt="Base Simucube 2 Pro">
+                                <h3>Simucube 2 Pro</h3>
+                            </div>
+                            <div class="detras">
+                                <h3>Simucube 2 Pro</h3>
+                                <p>Fuerza: 21 Nm</p>
+                                <p>Considerada una de las mejores bases del mundo por su latencia ultra baja.</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="coche" role="listitem">
+                        <div class="carta">
+                            <div class="frente">
+                                <img src="imagenes/tec.jpg" alt="Base Fanatec DD2">
+                                <h3>Fanatec Podium DD2</h3>
+                            </div>
+                            <div class="detras">
+                                <h3>Fanatec DD2</h3>
+                                <p>Fuerza: 25 Nm Peak</p>
+                                <p>El tope de gama de Fanatec con pantalla OLED y garantía extendida.</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
         </section>
     </main>
+
 </body>
 </html>
