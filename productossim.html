@@ -18,74 +18,44 @@
     <link rel="stylesheet" href="simracing.css">
 </head>
 <body>
+    <header role="banner">
+         <h1>Componentes de SimRacing</h1>
+    </header>
 
-<header role="banner">
-    <h1>Componentes de SimRacing</h1>
-</header>
+    <nav class="migas" aria-label="Breadcrumb">
+        <ol style="list-style: none; display: flex; padding: 0;">
+            <li><a href="index.html">Inicio</a></li>
+            <li aria-hidden="true" style="margin: 0 5px;">›</li>
+            <li class="actual" aria-current="page">Componentes</li>
+        </ol>
+    </nav>
 
-<nav class="migas" aria-label="Breadcrumb">
-    <ol 
-        <li><a href="index.html">Inicio</a></li>
-        <li aria-hidden="true" style="margin: 0 5px;">›</li>
-        <li class="actual" aria-current="page">Componentes</li>
-    </ol>
-</nav>
-
-<main role="main">
-    <section aria-label="Categorías de componentes">
-        <div class="coches" role="list">
-
-            <article class="coche" role="listitem">
-                <div class="carta">
-                    <div class="frente">
-                        <a href="bases.html" aria-label="Ir a la sección de Bases para volantes">
-                            <img src="imagenes/fondomoza.png" alt="Bases de Volantes">
-                        </a>
-                        <h3>Bases</h3>
-                    </div>
-                    <div class="detras">
-                        <h3>Bases Direct Drive</h3>
-                        <p>El motor principal que transmite el Force Feedback directamente al eje del volante.</p>
-                        <a href="bases.html" class="boton-volver">Ver Bases</a>
-                    </div>
+    <main role="main">
+        <section>
+            <article>
+                <div>
+                    <a href="bases.html">
+                        <img src="imagenes/fondomoza.png" alt="Ir a la sección de Bases para volantes">
+                    </a>
                 </div>
             </article>
 
-            <article class="coche lmp2" role="listitem">
-                <div class="carta">
-                    <div class="frente">
-                        <a href="volantes.html" aria-label="Ir a la sección de Volantes">
-                            <img src="imagenes/mozaverde.png" alt="Volantes de Simracing">
-                        </a>
-                        <h3>Volantes</h3>
-                    </div>
-                    <div class="detras">
-                        <h3>Aros y Volantes</h3>
-                        <p>Diferentes tipos de aros: tipo Formula, GT o circulares para rally y drift.</p>
-                        <a href="volantes.html" class="boton-volver">Ver Volantes</a>
-                    </div>
+            <article class="lmp2">
+                <div>
+                    <a href="volantes.html">
+                        <img src="imagenes/mozaverde.png" alt="Ir a la sección de Volantes">
+                    </a>
                 </div>
             </article>
 
-            <article class="coche pedales" role="listitem">
-                <div class="carta">
-                    <div class="frente">
-                        <a href="pedales.html" aria-label="Ir a la sección de Pedales">
-                            <img src="imagenes/pedaleslila.png" alt="Pedales de competición">
-                        </a>
-                        <h3>Pedales</h3>
-                    </div>
-                    <div class="detras">
-                        <h3>Pedaleras</h3>
-                        <p>Sistemas de acelerador, freno con célula de carga y embrague para máxima precisión.</p>
-                        <a href="pedales.html" class="boton-volver">Ver Pedales</a>
-                    </div>
+            <article class="pedales">
+                 <div>
+                    <a href="pedales.html">
+                        <img src="imagenes/pedaleslila.png" alt="Ir a la sección de Pedales">
+                    </a>
                 </div>
             </article>
-
-        </div>
-    </section>
-</main>
-
+        </section>
+    </main>
 </body>
 </html>
