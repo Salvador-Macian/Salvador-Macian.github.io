@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volante para SimRacing</title>
+    <style>
+        .bases {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;         
+    padding: 20px;
+}
+
+.bases .filaspesadas {
+    display: flex;
+    gap: 20px;            
+    justify-content: center;
+    flex-wrap: wrap;       
+}
+
+.bases img {
+    width: 250px;           
+    height: auto;
+    border-radius: 8px;    
+    box-shadow: 8px rgb(6, 101, 6); 
+ 
+}
+body{
+    background-image: url(imagenes/fondonegro.webp);
+ background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+h1{
+    color: white;
+    text-align: center;
+}h2{
+    color: white;
+}
+span{
+    color: white;
+}
+.migas {
+  position: absolute; 
+  top: 30px;         
+  left: 15px;         
+  font-size: 14px;
+  z-index: 100;       
+}
+
+.migas a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.migas a:hover {
+  text-decoration: underline;
+}
+
+.migas span {
+
+  color: #ffffff;
+}
+
+.migas .actual {
+  color: white;
+}
+h1{
+    color: red;
+}
+h2{
+    color: red;
+}
+
+
+
+
+
+
+       
+    </style>
+</head>
+<body>
+    <nav class="migas" >
+  <a href="salvaweb.html">Inicio</a><span>›</span><a href="productossim.html">Componentes</a><span>›</span> <span class="actual">Volantes</span>
+    </nav>
+
+    <h1>Volantes para SimRacing</h1>
+    <section class="bases">
+
+    <article class="filaspesadas">
+        <h2>Volantes de Moza</h2>
+        <img src="imagenes/mozavolante.webp" alt="KS">
+        <img src="imagenes/kspro.webp" alt="KSPRO">
+        <img src="imagenes/rsv2.webp" alt="RSV2">
+    </article>
+
+    <article class="filaspesadas">
+        <h2>Volantes de Fanatec</h2>
+        <img src="imagenes/bmwfana.webp" alt="R9">
+        <img src="imagenes/FANATECGT3.webp" alt="fanatec">
+        <img src="imagenes/formula.jpg" alt="r12">
+    </article>
+
+    <article class="filaspesadas">
+        <h2>Volantes Sim-Lab</h2>
+        <img src="imagenes/retro.webp" alt="r16">
+        <img src="imagenes/doce.jpg" alt="simcube">
+        <img src="imagenes/prosche.webp" alt="fanatec2">
+    </article>
+
+</section>
+
+
+   
+    
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volantes para SimRacing</title>
+    <style>
+        body {
+            background-image: url(imagenes/fondonegro.webp); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: red;
+            text-align: center;
+        }
+        h2 {
+            color: red;
+            text-align: center;
+        }
+        .migas {
+            position: absolute;   
+            top: 30px;           
+            left: 15px;           
+            font-size: 14px;  
+            z-index: 100;       
+        }
+        .migas a {
+            text-decoration: none;
+            color: #ffffff;
+        }
+        .migas a:hover {
+            text-decoration: underline;
+        }
+        .migas span {
+            color: #ffffff;
+        }
+        .migas .actual {
+            color: white;
+        }
+        .bases {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            padding: 20px;
+            align-items: center;
+        }
+        .filaspesadas {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+        .coche {
+            width: 300px;
+            height: 400px;
+            perspective: 1000px;
+        }
+        .carta {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform 0.6s;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px black;
+        }
+        .coche:hover .carta {
+            transform: rotateY(180deg);
+        }
+        .frente, .detras {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            overflow: hidden;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+        .detras {
+            transform: rotateY(180deg);
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .frente img {
+            width: 100%;
+            height: 80%;
+            object-fit: cover;
+        }
+        .frente h3 {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="migas" aria-label="Breadcrumb">  
+        <a href="salvaweb.html">Inicio</a><span> › </span><a href="productossim.html">Componentes</a><span> › </span> <span class="actual" aria-current="page">Volantes</span>    
+    </nav>
+
+    <header role="banner">
+        <h1>Volantes para SimRacing</h1>
+    </header>
+
+    <main>
+        <section class="bases" aria-label="Catálogo de volantes por marca">
+            
+            <section aria-labelledby="moza-title">
+                <h2 id="moza-title">Volantes de Moza</h2>
+                <div class="filaspesadas" role="list">
+                    <article class="coche" role="listitem">
+                        <div class="carta">
+                            <div class="frente">
+                                <img src="imagenes/mozavolante.webp" alt="Volante Moza KS">
+                                <h3>Moza KS</h3>
+                            </div>
+                            <div class="detras">
+                                <h3>Moza KS</h3>
+                                <p>Volante tipo GT/Fórmula de 300mm fabricado en fibra de carbono reforzada.</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="coche" role="listitem">
+                        <div class="carta">
+                            <div class="frente">
+                                <img src="imagenes/kspro.webp" alt="Volante Moza FSR Formula">
+                                <h3>Moza FSR</h3>
+                            </div>
+                            <div class="detras">
+                                <h3>Moza FSR</h3>
+                                <p>Volante de alta gama con pantalla integrada para telemetría en tiempo real.</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="coche" role="listitem">
+                        <div class="carta">
+                            <div class="frente">
+                                <img src="imagenes/rsv2.webp" alt="Volante Moza RS V2">
+                                <h3>Moza RS V2</h3>
+                            </div>
+                            <div class="detras">
+                                <h3>Moza RS V2</h3>
+                                <p>Volante circular de cuero para máxima versatilidad en GT y Drift.</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section aria-labelledby="fana-title">
+                <h2 id="fana-title">Volantes de Fanatec</h2>
+                <div class="filaspesadas" role="list">
+                    <article class="coche" role="listitem">
+                        <div class="carta">
+                            <div class="frente">
+                                <img src="imagenes/bmwfana.webp" alt="Volante Fanatec BMW M4 GT3">
+                                <h3>Fanatec BMW M4 GT3</h3>
+                            </div>
+                            <div class="detras">
+                                <h3>BMW M4 GT3</h3>
+                                <p>Réplica exacta del volante real de competición utilizado en el BMW M4 GT3.</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="coche" role="listitem">
+                        <div class="carta">
+                            <div class="frente">
+                                <img src="imagenes/FANATECGT3.webp" alt="Volante Fanatec CSL Elite McLaren GT3 V2">
+                                <h3>McLaren GT3 V2</h3>
+                            </div>
+                            <div class="detras">
+                                <h3>McLaren GT3 V2</h3>
+                                <p>El volante más popular de Fanatec, réplica oficial del McLaren 720S GT3.</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="coche" role="listitem">
+                        <div class="carta">
+                            <div class="frente">
+                                <img src="imagenes/formula.jpg" alt="Volante Fanatec ClubSport Formula V2.5">
+                                <h3>Formula V2.5</h3>
+                            </div>
+                            <div class="detras">
+                                <h3>Formula V2.5</h3>
+                                <p>Compacto y robusto, ideal para monoplazas con levas magnéticas de fibra de carbono.</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section aria-labelledby="simlab-title">
+                <h2 id="simlab-title">Volantes Sim-Lab</h2>
+                <div class="filaspesadas" role="list">
+                    <article class="coche" role="listitem">
+                        <div class="carta">
+                            <div class="frente">
+                                <img src="imagenes/retro.webp" alt="Volante Sim-Lab Retro GT">
+                                <h3>Sim-Lab XB1-Loadcell</h3>
+                            </div>
+                            <div class="detras">
+                                <h3>Sim-Lab XB1</h3>
+                                <p>Diseño enfocado a la máxima rigidez y respuesta táctil para pilotos profesionales.</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="coche" role="listitem">
+                        <div class="carta">
+                            <div class="frente">
+                                <img src="imagenes/doce.jpg" alt="Volante Sim-Lab Precision">
+                                <h3>Sim-Lab GT3</h3>
+                            </div>
+                            <div class="detras">
+                                <h3>Sim-Lab GT3</h3>
+                                <p>Ergonomía avanzada con botones retroiluminados y materiales premium.</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="coche" role="listitem">
+                        <div class="carta">
+                            <div class="frente">
+                                <img src="imagenes/prosche.webp" alt="Volante Sim-Lab Porsche Cup">
+                                <h3>Sim-Lab Porsche Cup</h3>
+                            </div>
+                            <div class="detras">
+                                <h3>Porsche Cup Replica</h3>
+                                <p>Fiel reproducción del volante utilizado en la Porsche Supercup.</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+        </section>
+    </main>
+
+</body>
+</html>
